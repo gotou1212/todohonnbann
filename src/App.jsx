@@ -22,27 +22,17 @@ function App() {
   };
 
   return (
-    <div className="app-container">
-      <h1 className="app-title">TODOリスト</h1>
-      <div className="task-input-container">
+    <div>
+      <h1>TODOリスト</h1>
+  
         <input 
           type="text" 
           value={task} 
           onChange={handleInputChange} 
           placeholder="タスクを入力..."
-          className="task-input"
         />
-        <button onClick={handleAddTask} className="add-button">追加</button>
+        <button onClick={handleAddTask} className="tuika-button">追加</button>
       </div>
-      <ul className="task-list">
-        {tasks.map((task, index) => (
-          <li key={index} className="task-item">
-            {task}
-            <button onClick={() => handleDeleteTask(index)} className="delete-button">削除</button>
-          </li>
-        ))}
-      </ul>
-    </div>
   );
 }
 
