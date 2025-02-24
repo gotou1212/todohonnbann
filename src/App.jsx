@@ -22,17 +22,23 @@ function App() {
   };
 
   return (
+
     <div>
-      <h1>TODOリスト</h1>
-  
-        <input 
-          type="text" 
-          value={task} 
-          onChange={handleInputChange} 
-          placeholder="タスクを入力..."
-        />
-        <button onClick={handleAddTask} className="tuika-button">追加</button>
+      <div className="kakoi">
+        <h3 className='TODOアプリ'>TODOアプリ</h3>
+        <div>
+          <div className="tekist">
+          <input
+            type="text" 
+            value={task} 
+            onChange={handleInputChange} 
+            placeholder="タスクを入力..."
+          />
+          </div>
+          <button onClick={handleAddTask} className="tuika-button">追加</button>
+        </div>
       </div>
+    </div>
   );
 }
 

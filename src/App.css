@@ -1,14 +1,54 @@
-
-
 body {
   background-color: #f4f4f9;
-  display:flex;
+  display: flex;
   justify-content: center;
   align-items: center;
   height: 100vh;
 }
 
-.tuika-button{
+.tuika-button {
+  border: none;
+  border-radius: 10px;
   background-color: aquamarine;
   color: black;
+  padding: 12px 24px;
+  cursor: pointer;
+  font-size: 16px;
+  position: relative;
+  left: 190px;
 }
+
+.kakoi {
+  border: 1px solid black;
+  width: 500px;
+  height: 500px;
+  padding: 20px;
+  box-sizing: border-box;
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba;
+}
+
+
+.TODOアプリ {
+  width: 100%;
+  text-align: center;
+}
+
+
+.tekist input{
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-size: 16px;
+  margin-bottom: 20px;
+  box-sizing: border-box;
+}
+
+
+
+
+
+
+
