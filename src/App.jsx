@@ -22,21 +22,29 @@ function App() {
   };
 
   return (
-
     <div>
       <div className="kakoi">
         <h3 className='TODOアプリ'>TODOアプリ</h3>
         <div>
           <div className="tekist">
-          <input
-            type="text" 
-            value={task} 
-            onChange={handleInputChange} 
-            placeholder="タスクを入力..."
-          />
+            <input
+              type="text"
+              value={task}
+              onChange={handleInputChange}
+              placeholder="タスクを入力..."
+            />
           </div>
           <button onClick={handleAddTask} className="tuika-button">追加</button>
         </div>
+      </div>
+
+      <div className="task-list">
+        {tasks.map((task, index) => (
+          <div key={index} className="task-item">
+            <span>{task}</span>
+            <button onClick={() => handleDeleteTask(index)} className="delete-button">削除</button>
+          </div>
+        ))}
       </div>
     </div>
   );
